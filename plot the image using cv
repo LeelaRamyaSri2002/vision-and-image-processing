@@ -1,0 +1,14 @@
+#How to plot the image
+import cv2
+from matplotlib import pyplot as plt
+gray_img = cv2.imread("/home/matlab/Desktop/19MIC0100/images/DIP3E_Original_Images_CH01/Fig0102(1922 digital image).tif", 0)  #0 - to read the image in the grey 
+
+#execute first three lines - gray_img is of type uint8
+#plt.imshow(gray_img, cmap="gray") # show the image 
+
+#how to show the histogram of the image
+
+#Histogram - How many pixels are bright and dark 
+
+#In VE gray_img is of 2D, for histogram we need 1D, .flat(for 1D)
+plt.hist(gray_img.flat, bins=50, range=(0, 100))
