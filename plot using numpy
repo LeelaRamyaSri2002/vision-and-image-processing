@@ -1,0 +1,7 @@
+from matplotlib import pyplot as plt
+import numpy as np
+x=[10, 20, 30, 40, 50]       #List
+y=[100, 200, 300, 400, 500]
+a=np.array(x)    # x is converted to numpy array
+b=np.array(y)    # y is converted to numpy array
+plt.plot(a,b)
