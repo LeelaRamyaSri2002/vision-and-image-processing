@@ -1,0 +1,4 @@
+from skimage import io, filters
+from matplotlib import pyplot as plt
+img = io.imread('C:/Users/Hi/Desktop/DIP3E_Original_Images_CH01/Fig0107(b)(kidney-original).tif')
+plt.imshow(img)
