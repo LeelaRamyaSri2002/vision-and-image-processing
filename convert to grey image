@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 10 15:22:51 2022
+
+@author: matlab
+"""
+from matplotlib import pyplot as plt
+from skimage import io
+from skimage.transform import rescale, resize, downscale_local_mean
+img = io.imread('/home/matlab/Desktop/DIP3E_CH01_Original_Images/DIP3E_Original_Images_CH01/colorimage.jpg', as_gray=True)
+plt.imshow(img)
